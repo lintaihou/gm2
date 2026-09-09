@@ -20,7 +20,7 @@ The model backbone shapes and many shared design choices follow [Qwen3-0.6B-Base
 | Position encoding | RoPE in dense attention only, with base `1e6`; omitted from SEA. |
 | Embeddings and initialization | Tied input/output embeddings; embedding and linear weights initialized with normal standard deviation `0.02`; RMSNorm scales initialized to one. |
 | Edges | 8 input-refresh edges; realignment enabled; stored-edge count, referral count, sparsity, and dense refresh vary by preset. |
-| Temperatures | Shifted softplus, $f(x)=\operatorname{softplus}(x+\log(e-1))$, so $f(0)=1$. |
+| Temperatures | Shifted softplus, $f(x)=\mathrm{softplus}(x+\log(e-1))$, so $f(0)=1$. |
 | **Training** | |
 | Objective | Next-token cross-entropy. |
 | Sequence length | 4,096, including one prepended padding token. |
