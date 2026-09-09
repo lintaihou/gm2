@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+type: software
+title: "Graph Machine: Towards Better Pretraining via Edges"
+authors:
+  - family-names: "Hou"
+    given-names: "Lintai"
+preferred-citation:
+  type: generic
+  title: "Graph Machine: Towards Better Pretraining via Edges"
+  authors:
+    - family-names: "Hou"
+      given-names: "Lintai"
+  year: 2026
+  notes: "arXiv preprint arXiv:2609.02881 [cs.LG]."
+  url: "https://arxiv.org/abs/2609.02881"

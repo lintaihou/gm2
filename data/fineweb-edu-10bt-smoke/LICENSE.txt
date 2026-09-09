@@ -1,0 +1,30 @@
+FineWeb-Edu smoke subset: license and attribution
+
+This directory contains tokenized, truncated data derived from the
+sample-10BT subset of FineWeb-Edu, released by Hugging Face.
+
+Upstream attribution:
+Anton Lozhkov, Loubna Ben Allal, Leandro von Werra, and Thomas Wolf (2024).
+FineWeb-Edu: the Finest Collection of Educational Content. Hugging Face.
+Dataset: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+DOI: https://doi.org/10.57967/hf/2497
+
+Contains information from FineWeb-Edu, which is made available under the
+Open Data Commons Attribution License (ODC-By) v1.0:
+https://opendatacommons.org/licenses/by/1-0/
+
+The upstream dataset also specifies that use is subject to Common Crawl's
+Terms of Use:
+https://commoncrawl.org/terms-of-use
+
+Local preparation:
+The source data was tokenized using Qwen/Qwen3-0.6B-Base and stored as
+uint32 token IDs. Prefixes of the existing train.bin and test.bin were
+retained to create this smoke subset:
+- train.bin: 5,241,600 tokens (20,966,400 bytes).
+- test.bin: 524,160 tokens (2,096,640 bytes).
+
+These data files are not licensed under the repository's software license.
+ODC-By covers database rights; individual source documents may be subject
+to separate copyrights and terms. This notice does not grant additional
+rights in that underlying content.

@@ -1,0 +1,40 @@
+# Model
+init_std: 0.02
+vocab_size: 151_936
+n_layers:
+    - 21
+    - 7
+n_referrals: 3
+hidden_size: 1024
+n_edges: 16
+sparsities:
+    - 4
+    - 4
+    - 4
+    - 4
+n_heads: 16
+n_groups: 8
+head_size: 128
+rope_base: 1_000_000.0
+expansion: 3
+n_input_refreshes: 8
+n_dense_refreshes: 0
+realign: true
+# Training
+dataset: "fineweb-edu-100bt-20m-20k"
+load: false
+compile: true
+mixed_precision: true
+seq_length: 4096
+n_steps: 30_000
+n_accum_steps: 32
+batch_size: 4
+lr: 1e-3
+n_warmup_steps: 1_000
+beta_1: 0.9
+beta_2: 0.95
+weight_decay: 0.1
+grad_clip: 1.0
+test: false
+save_interval: 7500
+save_final: true
